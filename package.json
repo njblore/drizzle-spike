@@ -1,0 +1,26 @@
+{
+  "name": "oak-user-api",
+  "version": "1.0.0",
+  "description": "Oak user api",
+  "main": "dist/index.js",
+  "scripts": {
+    "getUser": "tsc; functions-framework --target=getUser",
+    "addBookmark": "tsc; functions-framework --target=addBookmark",
+    "getBookmarks": "tsc; functions-framework --target=getBookmarksForUser",
+    "build": "tsc",
+    "migrate": "drizzle-kit generate; drizzle-kit migrate"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.2",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.28.0",
+    "tsx": "^4.19.2"
+  }
+}
